@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Salary Projection App</title>
+</head>
+
+<body>
+  <div class="row m-0">
+
+    <div class="col-sm-3 left-div">
+      <label for="cts">Annual Salary:</label>
+      <input type="number" id="ctc" class="annual-salary form-control" placeholder="Enter Annual Salary" /><br />
+
+      <label for="increment">Increment Percentage:</label>
+      <input type="number" id="increment" class="increment-percentage form-control"
+        placeholder="Enter Increment Percentage(%)" /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" class="age form-control" placeholder="Enter Age(In Years)" /><br />
+
+      <label for="noOfyrs">Number of Years:</label>
+      <input type="number" id="noOfyrs" class="noOfyrs form-control" placeholder="No of Years u want to check" /><br /><br />
+
+      <button type="button" class="btn btn-outline-dark display-btn">
+        Project
+      </button>
+    </div>
+
+    <div class="col-sm-9 right-div">
+      <table class="table table-striped hide" id="display-table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Increased in Salary</th>
+            <th scope="col">Annual Salary</th>
+            <th scope="col">Total Cumulated Salary</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <!-- jQuery Library -->
+  <script src="jQuery/jquery-3.6.0.min.js"></script>
+  <!--  Bootstrap Bundle with Popper -->
+  <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- https://flatuicolors.com/ -->
